@@ -47,7 +47,7 @@ class PancakesEnv(gym.Env):
     this.observation_space=spaces.Tuple(spaces.Discrete(this.number_of_pancakes) for _ in range(this.number_of_pancakes))
     this.pancakes=[i for i in range(this.number_of_pancakes)]
     this.reward_range = (this._calc_reward(), 0)
-    np.random.shuffle(this.pancakes)
+    this.np_random.shuffle(this.pancakes)
 
   def _render(this, mode='human', close=False):
     width = 2*this.number_of_pancakes + 1;
