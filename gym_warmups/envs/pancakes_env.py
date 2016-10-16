@@ -47,7 +47,11 @@ class PancakesEnv(gym.Env):
     this.observation_space=spaces.Tuple(spaces.Discrete(this.number_of_pancakes) for _ in range(this.number_of_pancakes))
     this.pancakes=[i for i in range(this.number_of_pancakes)]
     this.reward_range = (this._calc_reward(), 0)
+<<<<<<< HEAD
     this.np_random.shuffle(this.pancakes)
+=======
+    np.random.shuffle(this.pancakes)
+>>>>>>> fix
 
   def _render(this, mode='human', close=False):
     width = 2*this.number_of_pancakes + 1;
@@ -68,3 +72,4 @@ class PancakesEnv(gym.Env):
       self.np_random, seed = seeding.np_random(seed)
       return [seed]
 
+#Copyright © 2016 Back 2 Basics Gym. All Rights Reserved.

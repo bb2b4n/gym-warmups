@@ -9,3 +9,5 @@ for i,level in enumerate(levels):
       kwargs={'pancakes': 4*(i+1)},
       timestep_limit=20000,
   )
+
+#Copyright © 2016 Back 2 Basics Gym. All Rights Reserved.

@@ -30,3 +30,5 @@ env = gym.make('Pancakes-Grandmaster-v0')
 env.reset()
 env.render()
 ```
+
+Copyright © 2016 Back 2 Basics Gym. All Rights Reserved.
