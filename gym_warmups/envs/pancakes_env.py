@@ -68,3 +68,4 @@ class PancakesEnv(gym.Env):
       self.np_random, seed = seeding.np_random(seed)
       return [seed]
 
+#Copyright © 2016 Back 2 Basics Gym. All Rights Reserved.
